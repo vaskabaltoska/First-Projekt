@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Doma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+
+            header {
+            background: #A41F23;
+            opacity: 0.8;
+            height: 100px;
+            position: relative;
+            }
+
+            .logo{
+            position: absolute;
+            left: 5%;
+            top: 4%;
+            z-index: 1;
+            }
+
+            h1{
+            padding-top: 25px;
+            padding-left: 18%;
+            font-family: "Montserrat", sans-serif;
+            font-size: 400;
+            }
+
+            ul li{
+            display: inline;
+            }
+
+            ul.ms-5 li{
+            display: inline;
+            padding-left: 10px;
+            font-size: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            }
+
+            .hero img{
+            margin-left: 0%;
+            top: 100px;
+            height: 1024px;
+            width: 1600px;
+            }
+
+            .next-match {
+            position: absolute;
+            width: 586px;
+            height: 202.16px;
+            left: 427px;
+            top: 1060px;
+
+
+            background: linear-gradient(135.49deg, #F8F0F1 1.87%, rgba(248, 240, 241, 0.679253) 38.93%, rgba(248, 240, 241, 0.396254) 68.8%, rgba(248, 240, 241, 0) 97.36%);
+
+
+            padding: 30px;
+            border-radius: 50px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+
+            .naslov{
+              font-family: "Montserrat", sans-serif;
+              font-weight: 700;
+              position: absolute;
+              top: 968px;
+              left: 600px;
+              font-size: 30px;
+              letter-spacing: 0.2em;
+            }
+
+            .navbar{
+              background-color: #D3474C;
+              position: absolute;
+              top: 285px;
+              left: 10%;
+              width: 80%;
+              opacity: 0.7;
+            }
+
+            ul.mb-2 li{
+              display: inline;
+              top: 70px;
+              margin-left: 92px;
+            }
+
+            .ulWithDropdown .dropdown{
+              top: 0px;
+              left: auto;
+            }
+
+            .ulWithDropdown .dropdown ul.dropdown-menu{
+              background-color: #A41F23;}
+
+            .ulWithDropdown .dropdown ul.dropdown-menu li a{
+              border-bottom: 1px solid white;
+            }
+
+            .ulWithDropdown .dropdown ul.dropdown-menu hr{
+              border: 1px solid white;
+            }
+
+            .ulWithDropdown .dropdown ul.dropdown-menu li:hover{
+              background-color: #D3474C;
+            }
+
+            .ulWithDropdown .dropdown ul.dropdown-menu li a:hover{
+              background-color: #D3474C;
+            }
+
+            .naslovPodHero h2{
+              margin-top: 250px;
+              font-family: "Montserrat", sans-serif;
+              color: darkred;
+              font-size: 40px;
+            }
+
+            .mt-2 .row{
+              margin-top: 200px;
+              margin-left: 50px;
+              margin-right: 50px;
+            }
+
+            .mt-2 .row .card{
+              margin-left: 30px;
+              border: none;
+            }
+
+            /*.container-fluid .mt-5 .row .card{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            }*/
+
+            .card .card-body a{
+              margin-left: 370px;
+            }
+
+            .card .card-body a i{
+              font-size: 20px;
+              color: #A41F23;
+            }
+
+            .car{
+              width: 85%;
+              height: 652px;
+              background: linear-gradient(136.09deg, #A41F23 2.09%, rgba(164, 31, 35, 0.822917) 28.08%, rgba(164, 31, 35, 0.582064) 62.31%, rgba(164, 31, 35, 0.390542) 78.82%, rgba(164, 31, 35, 0) 99.81%);
+              margin-top: 150px;
+            }
+
+            .car .m-1{
+              height: 100%;
+            }
+
+            .slika{
+              margin-top: 50px;
+            }
+
+            .slika img{
+              width: 85%;
+              margin-left: 110px;
+            }
+
+            .slika h3{
+              font-family: "Montserrat", sans-serif;
+              margin-left: 110px;
+            }
+
+            .slika p{
+              font-family: "Montserrat", sans-serif;
+              margin-left: 110px;
+            }
+
+            .lc {
+              width: 85%;
+              margin-left: 100px;
+              margin-top: 200px;
+            }
+
+            .lc h2{
+              color: #A41F23;
+              font-family: "Montserrat", sans-serif;
+            }
+
+            .lc p{
+              font-family: "Montserrat", sans-serif;
+              text-align: justify;
+              font-size: 20px;
+            }
+
+            .lc h4{
+              font-family: "Montserrat", sans-serif;
+              font-size: 23px;
+              font-weight: bold;
+            }
+
+            .container{
+              width: 1620px;
+              height: 100px;
+              margin-top: 150px;
+            }
+
+            .container .fi{
+              width: 100%;
+              height: 80px;
+              margin-bottom: 50px;
+            }
+
+            .container .bg{
+              width: 1580px;
+              height: 300px;
+              background-color: #A41F23;
+              position: relative;
+            }
+
+            .container .bg .ft img{
+              position: absolute;
+              top: -50px;
+              left: 70px;
+              width: 200px;
+            }
+
+            .container .bg
+            .list,
+            .list-2{
+              margin-top: 70px;
+            }
+
+            .container h5{
+              font-family: "Montserrat", sans-serif;
+              color: white;
+              font-size: 20px;
+              font-weight: bold;
+              margin-left: 32px;
+              margin-bottom: 20px;
+            }
+
+            .container .bg .list li{
+              display: block;
+              margin-bottom: 10px;
+              margin-left: 0;
+            }
+
+            .container .bg .list li a{
+              color: white;
+              font-family: "Montserrat", sans-serif;
+              font-size: 16px;
+              text-decoration: none;
+              margin-left: 0;
+            }
+
+            .container .bg .list li a:hover{
+              font-weight: bold;
+            }
+
+            .container .bg .list-2 li a{
+              color: white;
+              font-family: "Montserrat", sans-serif;
+              font-size: 16px;
+              text-decoration: none;
+              margin-left: 0;
+            }
+
+            .slika a{
+              text-decoration: none;
+              color: black;
+            }
+
+            .slika a:hover{
+              font-weight: bold;
+              color: blue;
+            }
+            /* Card/On hover */
+
+      /* Auto layout
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 7px;
+      isolation: isolate;
+
+      width: 358.45px;
+      height: 378.73px;*/
+    </style>
+  </head>
+  <body>
+    <header class="d-flex">
+      <h1 class="text-white me-3">ЖЕНСКИ ФУДБАЛСКИ КЛУБ "БОРЕЦ"</h1>
+
+      <ul class="justify-content-end pt-4 ms-5">
+        <li>
+          <a class="text-white text-decoration-none" href="#">ENG</a>
+        </li>
+        <li>
+          <a class="text-white text-decoration-none" href="#">МКД</a>
+        </li>
+      </ul>
+
+      <ul class="justify-content-end pt-4">
+        <li>
+          <a class="text-white ms-5" href="#"
+            ><i class="fa-brands fa-facebook-f" style="font-size: 25px;"></i
+          ></a>
+        </li>
+        <li>
+          <a class="text-white ms-4" href="#"
+            ><i
+              class="fa-brands fa-square-instagram"
+              style="font-size: 22px;"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a class="text-white ms-4" href="#"
+            ><i class="fa-brands fa-youtube" style="font-size: 22px;"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="ulWithDropdown">
+          <ul class="nav mb-2">
+            <li class="nav-item text-center ms-0">
+              <a class="text-white nav-link text-decoration-none" href="#home"
+                >Дома</a
+              >
+            </li>
+
+            <li class="nav-item text-center dropdown">
+              <a
+                class="text-white nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Клуб
+              </a>
+              <ul class="dropdown-menu p-0">
+                <li class="m-0">
+                  <a class="dropdown-item text-white" href="proekti.html"
+                    >Проекти</a
+                  >
+                </li>
+
+                <li class="m-0">
+                  <a class="dropdown-item text-white" href="Zaklubot.html"
+                    >За нас</a
+                  >
+                </li>
+
+                <li class="m-0">
+                  <a
+                    class="dropdown-item text-white"
+                    href="Zaklubot.html#carousel"
+                    >Раководство</a
+                  >
+                </li>
+
+                <li class="m-0">
+                  <a class="dropdown-item text-white" href="kontakt.html"
+                    >Контакт</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item text-center">
+              <a class="text-white nav-link" href="prvtim.html">Прв Тим</a>
+            </li>
+
+            <li class="nav-item text-center">
+              <a class="text-white nav-link" href="natprevari.html"
+                >Натпревари</a
+              >
+            </li>
+
+            <li class="nav-item text-center">
+              <a class="text-white nav-link" href="kampovi.html">Кампови</a>
+            </li>
+
+            <li class="nav-item text-center">
+              <a class="text-white nav-link" href="galery.html">Галерија</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo" />
+    </div>
+    <div class="hero">
+      <img src="images/hero.svg" alt="hero" />
+    </div>
+    <div class="naslov">
+      <h2 class="text-center text-white">АКТУЕЛНО</h2>
+    </div>
+    <div class="next-match">
+      <img src="images/logo.svg" alt="logo" />
+      <div>
+        <h5 class="mt-3">Борец - Работнички</h5>
+        <h5 class="ms-5">0 - 0</h5>
+        <p class="ms-5 mt-4">25.11.2023</p>
+      </div>
+      <img src="images/logo.svg" alt="logo" />
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="naslovPodHero">
+        <h2 class="text-center text-red">ПРОЕКТИ</h2>
+      </div>
+      <div class="row ">
+        <div class="col-4">
+          <div class="card">
+            <img src="images/zs5.svg" alt="#" class="rounded shadow" />
+            <div class="card-body">
+              <h5 class="card-title text-center pt-4">
+                "Ние создаваме животни шампиони"
+              </h5>
+              <p class="card-text">
+                По презентацијата на концептот на животни шампиони на кампот во
+                Палиќ, трнерот од ЖФК Борец беа на завршниот годишен собир на
+                проектот...
+              </p>
+              <a href="niesozdavame.html" class="card-link"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="images/soz sam za zivot/sl1.svg"
+              alt="#"
+              class="rounded shadow"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center pt-4">
+                "Создаваме шампиони за живот"
+              </h5>
+              <p class="card-text">
+                Фудбалските тренери од помладите категории се сметаат за важна
+                алка во воспитувањето и образованието на децата и младите, а не
+                само луѓето кои се занимаваат...
+              </p>
+              <a href="sozdavamesampioni.html" class="card-link"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="images/info den/img6.svg"
+              alt="#"
+              class="rounded shadow"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center pt-4">"Инфо ден во Велес"</h5>
+              <p class="card-text pt-4">
+                На 6ти Април 2023 во Велес се одржа првиот инфо ден посветен на
+                новата линија на концептот Life Champion...
+              </p>
+              <a href="galeri4.html" class="card-link"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid car">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active justify-content-center">
+            <div class="d-flex p-5">
+              <div class="ms-5 space-between">
+                <img
+                  src="images/kiril-lazov-carousel-1.svg"
+                  alt="First slide"
+                />
+                <h3>Кирил Лазов</h3>
+                <p class="ms-0">Претседател и Доктор</p>
+              </div>
+
+              <div class="ms-5 space-between">
+                <img
+                  src="images/liljana-lazova-carousel-1.svg"
+                  alt="First slide"
+                />
+                <h3>Лилјана Лазова</h3>
+                <p class="ms-0">Проектен координатор</p>
+              </div>
+
+              <div class="ms-5 space-between">
+                <img
+                  src="images/toshe-nacev-carousel-1.svg"
+                  alt="First slide"
+                />
+                <h3>Тоше Начев</h3>
+                <p class="ms-0">Тренер</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex mt-5 justify-content-center">
+              <img src="images/kiril-lazov-carousel-1.svg" alt="Second slide" />
+              <div class="ms-5 mt-5">
+                <h3>Кирил Лазов</h3>
+                <h5>Претседател и Доктор</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex mt-5 justify-content-center">
+              <img
+                src="images/liljana-lazova-carousel-1.svg"
+                alt="Third slide"
+              />
+              <div class="ms-5 mt-5">
+                <h3>Лилјана Лазова</h3>
+                <h5>Проектен координатор</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex mt-5 justify-content-center">
+              <img src="images/toshe-nacev-carousel-1.svg" alt="Fourth slide" />
+              <div class="ms-5 mt-5">
+                <h3>Тоше Начев</h3>
+                <h5>Тренер</h5>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slika">
+      <img src="images/soz sam za zivot/slika1.svg" alt="kids" />
+      <h3 class="text-bold">"Создаваме шампиони за живот"</h3>
+      <p><a href="galery.html">Види галерија</a></p>
+    </div>
+
+    <div class="card lc">
+      <div class="row">
+        <div class="col-6">
+          <h2 class="ps-4 pt-3">
+            УСПЕШНИ <span class="fw-light">ПРИКАЗНИ</span>
+          </h2>
+          <p class="pt-4 ps-4">
+            "Јас усм Наташа Андонова и сум капитен на Македонската Женска
+            Фудбалска Репрезентација. Дел од мојата фудбалска кариера го поминав
+            во ЖФК Борец а од таму заминав во клубови како ПСЖ, Барселона а
+            моментално играм за Леванте од Шпанија. Борец е во моето рце затоа
+            што од Борец излегов во големи Европски клубови."
+          </p>
+          <h4 class="ps-4 text-bold">Наташа Андонова</h4>
+        </div>
+        <div class="col-4 offset-1">
+          <img
+            src="images/natasha-andova.svg"
+            alt="cardimg"
+            class="rounded shadow"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="fi">
+          <img src="background/footer.svg" alt="footer image" />
+        </div>
+        <div class="row bg">
+          <div class="col-3 ft">
+            <img src="images/image.png" alt="logo" />
+          </div>
+          <div class="col-2 list">
+            <h5>Информирај се</h5>
+            <ul>
+              <li><a href="#">Дома</a></li>
+              <li><a href="kampovi.html">Кампови</a></li>
+              <li><a href="natprevari.html">Натпревари</a></li>
+              <li><a href="galery.html">Галерија</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2 list">
+            <h5>За клубот</h5>
+            <ul>
+              <li><a href="proekti.html">Проекти</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="Zaklubot.html#carousel">Раководство</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2 list">
+            <h5>Заследи не</h5>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2 list-2">
+            <ul>
+              <li><a href="#">ENG</a></li>
+              <li><a href="#">МКД</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
